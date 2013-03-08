@@ -349,6 +349,7 @@ final class Image implements ImageInterface
                 $thumbnail->imagick->thumbnailImage(
                     $width,
                     $height,
+                    true,
                     true
                 );
             } elseif ($mode === ImageInterface::THUMBNAIL_OUTBOUND) {
